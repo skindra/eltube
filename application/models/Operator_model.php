@@ -14,7 +14,12 @@ class Operator_model extends MY_Model
             [
                 'field' => 'password',
                 'label' => 'Password',
-                'rules' => 'trim|required'
+                'rules' => 'trim|required|max_length[10]|min_length[2]'
+            ],
+            [
+                'field' => 'ulangipassword',
+                'label' => 'Ulangi Password',
+                'rules' => 'trim|required|matches[password]'
             ],
         ];
 

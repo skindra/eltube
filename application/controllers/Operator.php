@@ -55,18 +55,24 @@ class Operator extends Admin_Controller {
         if (! $validate) {
             $judul    = "";
             $mainView = "operator/form";
-            $this->load->view('operator/mainview', compact('judul','operator','mainView'));
+            $action = 'operator/edit/'.$id;
+            $this->load->view('operator/mainview', compact('judul','operator','mainView','input','action'));
             return;
         }
 
-        $update = $this->Operator->update($id, $input);
+        $data = [
+            'username' => $input->username,
+            'password' => password_hash($input->password, PASSWORD_DEFAULT),
+        ];
+
+        $update = $this->Operator->where('id_user',$id)->update($data);
         if (! $update) {
             flashMessage('error', 'Data gagal diupdate!');
         } else {
             flashMessage('success', 'Data berhasil diupdate.');
         }
 
-        redirect('phonebook-contact', 'refresh');
+        redirect(base_url('operator'), 'refresh');
     }
 
 	
