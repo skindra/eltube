@@ -20,7 +20,11 @@ class Operator extends Admin_Controller {
         }
 
         if (! $this->Operator->validate()) {
-            $this->load->view('operator/index', compact('input'));
+            $judul    = "Tambah Data";
+            $mainView = "operator/form";
+            $action = 'operator/add/';
+            $button = "Tambah";
+            $this->load->view('operator/mainview', compact('judul','operator','mainView','input','action','button'));
             return;
         }
 
@@ -53,10 +57,11 @@ class Operator extends Admin_Controller {
 
         $validate = $this->Operator->validate();
         if (! $validate) {
-            $judul    = "";
+            $judul    = "Edit Data";
             $mainView = "operator/form";
             $action = 'operator/edit/'.$id;
-            $this->load->view('operator/mainview', compact('judul','operator','mainView','input','action'));
+            $button = "Ubah";
+            $this->load->view('operator/mainview', compact('judul','operator','mainView','input','action','button'));
             return;
         }
 

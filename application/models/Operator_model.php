@@ -34,35 +34,4 @@ class Operator_model extends MY_Model
         ];
     }
 
-    public function login($input)
-    {
-        $input->password = md5($input->password);
-
-        $user = $this->db->where('username', $input->username)
-                         ->where('password',$input->password)
-                         ->where('status','on')
-                         ->limit(1)
-                         ->get($this->table)
-                         ->row();
-
-        if ($user) {
-            $data = [
-                'username' => $user->username,
-                'isLogin'  => true,
-            ];
-            $this->nativesession->set('username' , $user->username);
-            $this->nativesession->set('level' , $user->level);
-            $this->nativesession->set('isLogin' , true);
-            return true;
-        }
-
-        return false;
-    }
-
-    public function logout()
-    {
-        $data = ['username', 'isLogin'];
-        $this->session->unset_userdata($data);
-        $this->session->sess_destroy();
-    }
 }

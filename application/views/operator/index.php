@@ -10,7 +10,9 @@
                     <th>No</th>
                     <th>Username</th>
                     <th>Role</th>
-                    <th>Aksi</th>
+                    <th>
+                        <a href="<?=base_url('operator/add');?>" class="btn btn-sm btn-success">Tambah</a>
+                    </th>
                 </tr>
             </thead>
             <tbody>

@@ -1,6 +1,6 @@
 
     <div class="container mt-5">
-        <h2>Ubah Operator</h2>
+        <h2><?=$judul?></h2>
 
         <form action="<?=base_url($action);?>" method="post">
         <div class="form-group">
@@ -39,7 +39,7 @@
             <?=form_error('ulangipassword');?>
         </div>
 
-        <button type="submit" class="btn btn-sm btn-info">Ubah</button>
+        <button type="submit" class="btn btn-sm btn-info"><?=$button?></button>
         
         </form>
     </div>
