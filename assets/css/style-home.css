@@ -36,12 +36,12 @@ body {
     display: none !important;
 }
 
-.atas .container {
+.container {
     display: inline-block;
     cursor: pointer;
     margin: 14px 28px;
     position: fixed;
-    left: 25px;
+    left: 40px;
 }
 
 .bar1,
@@ -281,7 +281,7 @@ body {
     margin: auto;
 }
 
-.tengah .listview li {
+.tengah li {
     display: inline-block;
     margin: 5px;
     width: 290px;
@@ -307,19 +307,9 @@ body {
     font-family: fonB;
     color: #363e4a;
     width: 280px;
-    height: 54px;
-    ;
+    height: 40px;
     overflow: hidden;
     cursor: pointer;
-}
-
-.text-heading {
-    line-height: 1.5em;
-    text-align: left;
-    margin-left: 53px;
-    font-weight: normal;
-    border-bottom: 2px solid #49b293;
-    width: 1794px;
 }
 
 .marg {
@@ -445,13 +435,6 @@ body {
 
 .edit:hover {
     background: #319275;
-}
-
-ul.pagination {
-    float: right;
-    right: 54px;
-    position: relative;
-    margin: 18px 0;
 }
 
 @media screen and (orientation: portrait) {
