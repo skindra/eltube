@@ -26,12 +26,12 @@
     <div class="samping">
         <ul>
             <?php
-                $mp3=$this->db->query("SELECT * FROM `eltube` WHERE `id_kategori` = '$play->id_kategori' ORDER BY id DESC limit 8")->result_array();
+                $mp3=$this->db->query("SELECT * FROM `data_eltube` WHERE `id_kategori` = '$play->id_kategori' ORDER BY id DESC limit 8")->result_array();
                 $no = 0;
                 foreach ($mp3 as $play1 ) {
                     echo "
-                        <li class='gbr'><a href='video?play1=".$play1['id']."' class='vit'><img src='../../video/uploads/".   $play1['gambar']."' >"."<p>".$play1['judul']."</p></a>
-                            <font color='yellow' class='besar'>".$play1['id_kategori']."</font>
+                        <li class='gbr'><a href='video?play1=".$play1['id']."' class='vit'><img class='img-thumbnail' src='../../video/uploads/".   $play1['gambar']."' >"."<p>".$play1['judul']."</p></a>
+                            <font color='yellow' class='besar'>".$play1['subkategori']."</font>
                         </li>";
                 }
             ?>
