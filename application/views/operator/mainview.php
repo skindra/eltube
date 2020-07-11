@@ -55,7 +55,42 @@
                 $(".modal-body").html(data);
                 judul.find('.modal-title').text('Tambah ' + modal)
             });
-        })
+        });
+
+        /* Modal */
+        $('#ubahmodalkategori').on('shown.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var modal = button.data('id')
+            var judul = $(this)
+            let id = $("#kategori").val();
+            console.log('ok'+id);
+            // $.post('<?=base_url('kategori/modalubah/')?>'+modal, function( data ) {
+            //     $(".modal-body").html(data);
+            //     judul.find('.modal-title').text('Tambah ' + modal)
+            // });
+        });
+
+        $('.hapus-kategori').on('click',function(){
+            let id = $("#kategori").val();
+            var confirmText = "Are you sure you want to delete ?";
+            if(confirm(confirmText)) {
+                $.post('<?=base_url('kategori/hapuskategori/')?>'+id, function( data ) {
+                    location.reload(); 
+                });
+            }
+            return false;
+        });
+
+        $('.hapus-subkategori').on('click',function(){
+            let id = $("#subkategori").val();
+            var confirmText = "Are you sure you want to delete ?";
+            if(confirm(confirmText)) {
+                $.post('<?=base_url('kategori/hapussubkategori/')?>'+id, function( data ) {
+                    location.reload(); 
+                });
+            }
+            return false;
+        });
 
         
 
