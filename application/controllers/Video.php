@@ -21,6 +21,8 @@ class Video extends MY_Controller {
                 'browser' => '',
             ];
             $this->db->insert('laporan',$data);
+            // Tambah view pengunjung;
+            view_video($id);
         }
 
         $mainView = 'video/index';
