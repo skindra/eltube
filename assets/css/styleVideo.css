@@ -1,0 +1,201 @@
+                                                                                                                                            .w3-sidebar {
+                                                                                                                                            width: auto;
+                                                                                                                                            background: #212a34;
+                                                                                                                                            position: fixed!important;
+                                                                                                                                            z-index: 1;
+                                                                                                                                            overflow: auto;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .w3-sidebar img {
+                                                                                                                                            width: 90px;
+                                                                                                                                            padding: 5px;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .w3-teal {
+                                                                                                                                            z-index: 1;
+                                                                                                                                            border: none;
+                                                                                                                                            position: fixed;
+                                                                                                                                            outline: none;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .w3-teal:hover {
+                                                                                                                                            border: none;
+                                                                                                                                            opacity: 0.5;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .w3-teal img {
+                                                                                                                                            width: 40px;
+                                                                                                                                            padding: 2px;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .w3-animate-left {
+                                                                                                                                            position: relative;
+                                                                                                                                            animation: animateleft 0.4s
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        @keyframes animateleft {
+                                                                                                                                            from {
+                                                                                                                                                left: -300px;
+                                                                                                                                                opacity: 0
+                                                                                                                                            }
+                                                                                                                                            to {
+                                                                                                                                                left: 0;
+                                                                                                                                                opacity: 1
+                                                                                                                                            }
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .w3-left {
+                                                                                                                                            float: left!important
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .klose {
+                                                                                                                                            float: right;
+                                                                                                                                            border: none;
+                                                                                                                                            outline: none;
+                                                                                                                                            font-size: 35px;
+                                                                                                                                            color: #FFFFFF;
+                                                                                                                                            padding: 2px 12px;
+                                                                                                                                            background: #d23737;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .klose:active {
+                                                                                                                                            background: #9c1c1c;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .marg {
+                                                                                                                                            position: absolute;
+                                                                                                                                            top: 5px;
+                                                                                                                                            left: 80px;
+                                                                                                                                            right: 390px;
+                                                                                                                                            height: 80%;
+                                                                                                                                            background: #000000;
+                                                                                                                                            z-index: -1;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .marg p {
+                                                                                                                                            width: 100%;
+                                                                                                                                            /* margin: 0px; */
+                                                                                                                                            margin-top: -6px;
+                                                                                                                                            /* padding: 1% 3%; */
+                                                                                                                                            padding-top: 10px;
+                                                                                                                                            padding-bottom: 40px;
+                                                                                                                                            font-size: 16px;
+                                                                                                                                            font-family: fonB;
+                                                                                                                                            color: #ffffff;
+                                                                                                                                            background: #000000;
+                                                                                                                                            overflow: hidden;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .gbr {
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 100%;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .gbr video {
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 100%;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .samping {
+                                                                                                                                            position: absolute;
+                                                                                                                                            top: 5px;
+                                                                                                                                            right: 80px;
+                                                                                                                                            width: 265px;
+                                                                                                                                            bottom: 5px;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .samping li {
+                                                                                                                                            margin: 0px 0px 10px 0px;
+                                                                                                                                            padding: 0;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .samping img {
+                                                                                                                                            width: 290px;
+                                                                                                                                            height: 170px;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .samping p {
+                                                                                                                                            display: inline-block;
+                                                                                                                                            width: 280px;
+                                                                                                                                            height: 36px;
+                                                                                                                                            white-space: normal;
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                        .besar {
+                                                                                                                                            margin-top: -200px;
+                                                                                                                                        }
+                                                                                                                                        /* Versi smartphone */
+                                                                                                                                        
+                                                                                                                                        @media screen and (orientation: portrait) {
+                                                                                                                                            .atas {
+                                                                                                                                                height: 110px;
+                                                                                                                                            }
+                                                                                                                                            .menu_kiri {
+                                                                                                                                                top: 110px;
+                                                                                                                                            }
+                                                                                                                                            .tengah {
+                                                                                                                                                top: 110px;
+                                                                                                                                            }
+                                                                                                                                            .marg {
+                                                                                                                                                top: 20px;
+                                                                                                                                                left: 40px;
+                                                                                                                                                right: 40px;
+                                                                                                                                                height: 600px;
+                                                                                                                                                background: #000000;
+                                                                                                                                            }
+                                                                                                                                            .marg p {
+                                                                                                                                                width: 100%;
+                                                                                                                                                background: #000200;
+                                                                                                                                                padding: 3%;
+                                                                                                                                                font-size: 32px;
+                                                                                                                                                color: #FFFFFF;
+                                                                                                                                            }
+                                                                                                                                            .gbr {
+                                                                                                                                                height: 100%;
+                                                                                                                                            }
+                                                                                                                                            .gbr video {
+                                                                                                                                                height: 100%;
+                                                                                                                                            }
+                                                                                                                                            .w3-sidebar img {
+                                                                                                                                                width: 220px;
+                                                                                                                                            }
+                                                                                                                                            .klose {
+                                                                                                                                                font-size: 50px;
+                                                                                                                                                padding: 2px 18px;
+                                                                                                                                            }
+                                                                                                                                            .samping {
+                                                                                                                                                top: 760px;
+                                                                                                                                                left: 40px;
+                                                                                                                                                width: auto;
+                                                                                                                                                right: 40px;
+                                                                                                                                            }
+                                                                                                                                            .samping ul {
+                                                                                                                                                padding: 0;
+                                                                                                                                            }
+                                                                                                                                            .samping li {
+                                                                                                                                                margin: 15px -27px;
+                                                                                                                                                padding: 0;
+                                                                                                                                                width: 100%;
+                                                                                                                                                height: 350px;
+                                                                                                                                            }
+                                                                                                                                            .samping p {
+                                                                                                                                                font-size: 32px;
+                                                                                                                                                width: 403px;
+                                                                                                                                                height: 226px;
+                                                                                                                                            }
+                                                                                                                                            .samping img {
+                                                                                                                                                width: 415px;
+                                                                                                                                                height: 245px;
+                                                                                                                                                margin-top: -194px;
+                                                                                                                                            }
+                                                                                                                                            .besar {
+                                                                                                                                                margin-top: -231px;
+                                                                                                                                                font-size: 27px;
+                                                                                                                                                left: 4px;
+                                                                                                                                            }
+                                                                                                                                            .bbesar {
+                                                                                                                                                margin-top: -231px;
+                                                                                                                                                font-size: 27px;
+                                                                                                                                            }
